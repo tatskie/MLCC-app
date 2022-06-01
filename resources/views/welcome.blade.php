@@ -15,10 +15,10 @@
     <link href="{{ mix('js/app.js') }}">
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none font-sans">
-<!-- This example requires Tailwind CSS v2.0+ -->
+<!-- Header -->
 <div class="relative bg-white overflow-hidden">
   <div class="max-w-7xl mx-auto">
-    <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+    <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 h-screen">
       <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
         <polygon points="50,0 100,0 50,100 0,100" />
       </svg>
@@ -46,9 +46,14 @@
             <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
                 <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Community</a>
 
+                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Schedule</a>
+
                 <a href="#" class="font-medium text-gray-500 hover:text-gray-900">About Us</a>
 
                 <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Services</a>
+
+                <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Donate</a>
+
                 @if(Route::has('login'))
                     @auth
                         <a href="{{ url('/home') }}" class="font-medium text-indigo-600 hover:text-indigo-500">{{ __('Home') }}</a>
@@ -116,7 +121,7 @@
             <span class="block xl:inline">Mary's Little Children Community</span>
             <span class="block text-indigo-600 xl:inline">Healing Center</span>
           </h1>
-          <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">MLCC is a Catholic community which helps the Church through the ministry of Evangelization, Deliverance, and Healing.</p>
+          <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">Mary's Little Children Community (MLCC) Healing Center is founded by Msgr. Fred Kriekenbeek. MLCC is a Catholic community which helps the Church through the ministry of Evangelization, Deliverance, and Healing.</p>
           @if(Route::has('login'))
               @auth
               @else
@@ -140,8 +145,8 @@
   </div>
 </div>
 
-<!-- This example requires Tailwind CSS v2.0+ -->
-<div class="py-12 bg-white">
+<!-- About Us -->
+<div class="py-12">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="lg:text-center">
       <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">About Us</h2>
